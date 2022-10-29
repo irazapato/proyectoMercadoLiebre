@@ -1,0 +1,351 @@
+
+/*Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+/*Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+body {
+    font-family:"Roboto";
+    background-color: rgb(235, 230, 230);
+    color: #666;
+}
+
+.main-header{
+    background-color:#EAC926;
+    width:100%; 
+    color:black;
+    padding:20px;
+}
+main{
+    width:90%;
+    margin:auto;
+}
+.logo{
+  width:200px;
+}
+
+.copy-header{
+    font-weight: 400;
+    /*para que no este tan bold*/
+    text-align: center;
+    color:black;
+}
+.burger-menu{
+    background-color: #03264C;
+    color:white;
+    display:block;
+    max-width:50px;
+    padding:15px 0;
+    border-radius:8px;
+    text-align:center;
+    font-size: 18px;
+    margin:auto;
+    /*lo lleva al centro porque es un bloque*/
+    
+}
+.main-navbar{
+    display:none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color :#222222;
+    display: inline-block;
+    padding:5px 0;
+    font-size: 17px;
+}
+/*display:flex;
+flex-direction: column;
+justify-content: center;*/
+.index-product{
+   margin-bottom:10px;
+}/**/
+
+.product{
+    margin-top:15px;
+    background-color: #fff;
+    width:100%;
+    margin-bottom: 10px;
+    flex-grow: 1.0;
+    width: 100%;
+}
+.description-product{
+    padding:15px;
+    border-top:1px solid #ebebeb;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    
+}
+.price{
+    font-style: 18px;
+    line-height :0.2rem;
+    color:black;
+   
+    width:30%;
+    flex-grow:1;
+}
+.discount{
+    color:#39b54a;
+    line-height: 0.2rem;
+  
+    width:70%;
+    flex-grow:1;
+}
+.product i{
+    color:#39b54a;
+    border: solid #39b54a 1px;
+    padding: 15px;
+    border-radius: 100%;
+}
+.product i:hover{
+    transform : rotateZ(-90deg);
+    transition:450ms;
+}
+.product i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.description{
+    text-align: left;
+    margin-bottom:10px;
+    display:none;
+}
+img{
+    width: 100%;
+}
+
+/*desde aca styles para formularios de registro y login*/
+
+.formulario{
+    background-color:white;
+    padding:20px 10px;
+}
+.contenedor{
+    width:80%;
+    /*padding:15px;*/
+    margin:auto;
+   margin-bottom: 15px;
+   display:block;
+}
+h1{
+    margin:0;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#1e4075;
+    font-size: 30px;
+}
+input[type="text"],
+input[type="email"],input[type="password"],input[type="date"]{
+    font-size: 15px;
+    width: 82%;
+    padding:8px 8px;
+    border:none;
+    color:black;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border:solid 1px #aaa;
+}
+.input-contenedor p{
+    text-align:left;
+    padding:0 7px;
+}
+.input-comment,.input-category,.input-file{
+    margin-bottom: 15px;
+    border:solid 1px #aaa;
+    font-size:14px;
+    padding:8px 0;
+}
+.input-comment h2,.input-category h2,.input-file h2 {
+    font-size: 16px;
+    text-align :left;
+    padding:0 7px;
+}
+input[type="checkbox"]{
+  
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding:5px;
+    color:grey;
+    border:none;
+}
+input[type="radio"]{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding:10px;
+    color:grey;
+    border:none;
+}
+h2{
+    margin-top: 5px;
+    text-align: left;
+    color:grey;
+    font-size: 20px;
+    font-weight: 400;
+}
+.icon{
+    min-width:40px;
+    text-align:center;
+    color:grey;
+}
+.button{
+    border:none;
+    width:100%;
+    color:white;
+    font-size: 20px;
+    background-color:#1e4075;
+    margin-bottom: 15px;
+    padding:15px 20px;
+    border-radius: 5px;
+    transition:background-color 450ms;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: rgb(75, 147, 195);
+}
+p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+.link{
+    text-decoration: none;
+    color:#1a2537;
+    font-weight: 600;
+}
+.link:hover{
+    color: rgb(75, 147, 195) ;
+}
+
+/*hasta aca styles para registros y login*/
+
+footer{
+    text-align: center;
+    width:90%;
+    margin:auto;
+    background-color: white;
+    margin-top:10px;
+    margin-bottom: 10px;
+    line-height: 0.8rem;
+}
+footer h3{
+    font-size:16px;
+}
+footer p{
+    font-size: 12px;
+}
+
+footer i{
+    margin-block-start: 3rem;
+    margin-block-end: 0rem;
+    margin-bottom:10px;
+    font-size: 2em;
+    color: #1259c3;
+}
+
+footer i:hover{
+    color: rgb(75, 147, 195) ;
+}
+.copyrigth{
+    margin-top: 10px;
+}
+
+p {
+    font-size:14px;
+    
+}
+.copyrigth{
+    text-align: left;
+}
+
+
+@media(min-width:361px){
+   
+    .product {
+        box-shadow: 0px 0px 10px rgb ( 100,100,100 );
+        display:inline-block;
+        width: 47%;
+        justify-content:space-between;
+        align-items: flex-start;
+     }
+    .index-product{
+        margin:auto;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .description{
+        display:block;
+        color:#fff;
+    }
+    .description:hover{
+        display:block;
+        color:black;
+    }
+    
+}
+
+  @media(min-width:768px) {
+    .main-header-top-bar{
+        display:flex;
+        justify-content:space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align:right;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+      
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar li{
+        margin:0 5px;
+    }
+    .product {
+        display: inline-block;
+        width: 24%;
+        justify-content: space-between;
+
+    }
+    
+}
+   
+    
+

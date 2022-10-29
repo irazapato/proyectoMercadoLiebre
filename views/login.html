@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>MercadoLiebre</title>
+    <!--comentando-->
+    <!--para las fuentes-->
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--iconos-- https://fontawesome.com/v5/search?o=r&m=free-->
+
+    <link
+      href="https://fontawesome.com/icons?d=gallery&m=free"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+
+    <header class="main-header">
+      <div class="main-header-top-bar">
+      <img src="/img/logo-mercado-liebre.svg" class="logo">
+      
+      <h2 class="copy-header">
+      <i class="fas fa-hand-holding-usd"></i>
+         Comprá en cuotas y sin tarjetas de crédito</p>
+        </h2>
+      </div>
+
+      
+        <a href="#" class="burger-menu">
+        <i class="fas fa-bars"></i>
+        </a>
+      <!--enlace para el burgermenu da funcionalidad a la nav y busco icono-->
+      
+      <nav class="main-navbar">
+      <ul class="right-nav-bar">
+        <li><a href="#"> Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales </a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+
+      <ul class="left-nav-bar">
+        <li>
+          <a href="/register">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+        <li>
+          <a href="/login">Ingresa  <i class="fas fa-sign-in-alt"></i></a></li>
+        <li>
+          <a href="/shopping-cart">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+     </nav>
+    
+     </header>
+     
+     <div class="banner">
+        <img src="/img/img-home-banner.jpg" alt="banner de ofertas" />
+        </div>
+        
+         <form class ="formulario" action ="/login"method="POST">
+                <h1>Ingresá</h1>
+                <div class="contenedor">
+    
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" name ="usuario"placeholder="Nombre de usuario" pattern=".{8,}" title="Minimo 8 caracteres"required/>
+                </div>
+                
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name ="password"placeholder="Contraseña"/>
+                </div>
+    
+                <input type="Submit"value="Enviar"class="button">
+                <hr/>
+    
+                <p><a class="link"href="#">¿Olvidaste tu contraseña?</a></p>
+                <p>Al registrarte aceptas nuestros términos y condiciones de uso y privacidad</p>
+                <p>¿No tienes cuenta?<a class="link" href="/register">Registrate!</a></p>
+                </div>
+    
+            </form> 
+    
+  </body>
+  </html>

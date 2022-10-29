@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>MercadoLiebre</title>
+    <!--comentando-->
+    <!--para las fuentes-->
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--iconos-- https://fontawesome.com/v5/search?o=r&m=free-->
+
+    <link
+      href="https://fontawesome.com/icons?d=gallery&m=free"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+
+    <header class="main-header">
+      <div class="main-header-top-bar">
+      <img src="/img/logo-mercado-liebre.svg" class="logo">
+      
+      <h2 class="copy-header">
+      <i class="fas fa-hand-holding-usd"></i>
+         Comprá en cuotas y sin tarjetas de crédito</p>
+        </h2>
+      </div>
+
+      
+        <a href="#" class="burger-menu">
+        <i class="fas fa-bars"></i>
+        </a>
+      <!--enlca para el burgermenu da funicionalidad a la nav y busco icono-->
+      
+      <nav class="main-navbar">
+      <ul class="right-nav-bar">
+        <li><a href="#"> Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales </a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+
+      <ul class="left-nav-bar">
+        <li>
+          <a href="/register">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+        <li>
+          <a href="/login">Ingresa  <i class="fas fa-sign-in-alt"></i></a></li>
+        <li>
+          <a href="/shopping-cart">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+     </nav>
+    
+     </header>
+     
+    <div class="banner">
+    <img src="/img/img-home-banner.jpg" alt="banner de ofertas" />
+    </div>
+    
+     <form class="formulario"action="/register"method="POST">
+            <h1>Registrate!</h1>
+            <div class="contenedor">
+
+            <div class="input-contenedor">
+                
+                <input type="text" name="name"placeholder="Nombre y Apellido"/>
+            </div>
+            <div class="input-contenedor">
+               
+                <input type="email" name ="email"placeholder="Correo Electrónico"/>
+            </div>
+            <!--falta fecha de nacimiento y domicilio-->
+            <div class="input-contenedor">
+                
+                <input type="text" name ="text"placeholder="Domicilio"/>
+          </div>
+
+
+
+            <div class="input-contenedor"><p>Fecha de nacimiento</p>
+              <input type="date" name ="fecha" value="Fecha de Nacimiento"/>
+          </div>
+
+            <div class="input-comment">
+              <h2>Perfil de usuario</h2>
+              <label><input type="radio" name="usuario">Comprador </label>
+              <label><input type="radio" name="usuario">Vendedor </label>
+            </div>
+            <!--falta checkbox y foto de usuario-->
+            <div class="input-category">
+            <h2>Categorías de Interés</h2>
+            <label><input type="checkbox"name="interes" value="Electro">Electro</label><br>
+            <label><input type="checkbox"name="interes" value="Moda">Moda</label><br>
+            <label><input type="checkbox"name="interes" value="Hogar">Hogar</label><br>
+            <label><input type="checkbox"name="interes" value="Jugueteria">Juguetería</label><br>
+            <label><input type="checkbox"name="interes" value="Vida sana">Vida Sana</label><br>
+            </div>
+
+            <div class="input-file">
+             <h2>Foto de Usuario</h2>
+             <label><input type="file" name="file" accept=".jpg"/></label>
+            </div>
+            
+            <div class="input-contenedor">
+              <input type="password" name ="password" placeholder="Contraseña"/>
+            </div>
+
+            <div class="input-contenedor">
+             <input type="password" name ="password-confirm" placeholder="Confirmar Contraseña"required/>
+            </div>
+          
+            <!--falta confirmar contraseña-->
+                <input type="Submit"value="Registrate" class="button">
+                <input type="Reset"value="Borrar" class="button">
+            </div>
+            <p>Al registrarte aceptas nuestros términos y condiciones de uso y privacidad</p>
+            <p>¿Ya tienes cuenta?<a class="link" href="login">Iniciar sesión</a></p>
+            </div>
+
+        </form>
+
+    
+       
+    
+    </body>
+    </html>
